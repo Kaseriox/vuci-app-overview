@@ -8,7 +8,7 @@
       placement="right"
       :closable="true"
       :visible="visible"
-      :after-visible-change="afterVisibleChange"
+      :destroyOnClose="true"
       @close="onClose"
       width="1024"
     >
@@ -29,12 +29,6 @@ export default {
     }
   },
   methods: {
-    afterVisibleChange (val) {
-      console.log('visible', val)
-      if (!val) {
-        this.$emit('DrawerClosed')
-      }
-    },
     showDrawer () {
       this.visible = true
     },

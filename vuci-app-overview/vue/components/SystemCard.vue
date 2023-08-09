@@ -55,7 +55,7 @@ export default {
 
       this.list = []
       this.list.push({ title: 'ROUTER UPTIME', content: `${time.substring(0, 2)}h ${time.substring(3, 5)}m ${time.substring(6, 8)}s` })
-      this.list.push({ title: 'LOCAL DEVICE TIME', content: `${Localtime.getFullYear()}-${Localtime.getMonth() + 1 < 10 ? '0' + `${Localtime.getMonth() + 1}` : `${Localtime.getMonth()}`}-${Localtime.getMonth() + 1 < 10 ? '0' + `${Localtime.getDate() + 1}` : `${Localtime.getDate()}`} ${Localtime.getHours() < 10 ? '0' + `${Localtime.getHours()}` : `${Localtime.getHours()}`}:${Localtime.getMinutes() < 10 ? '0' + `${Localtime.getMinutes()}` : `${Localtime.getMinutes()}`}:${Localtime.getSeconds() < 10 ? '0' + `${Localtime.getSeconds()}` : `${Localtime.getSeconds()}`} ` })
+      this.list.push({ title: 'LOCAL DEVICE TIME', content: `${Localtime.getFullYear()}-${Localtime.getMonth() + 1 < 10 ? '0' + `${Localtime.getMonth() + 1}` : `${Localtime.getMonth()}`}-${Localtime.getDate() + 1 < 10 ? '0' + `${Localtime.getDate() + 1}` : `${Localtime.getDate()}`} ${Localtime.getHours() < 10 ? '0' + `${Localtime.getHours()}` : `${Localtime.getHours()}`}:${Localtime.getMinutes() < 10 ? '0' + `${Localtime.getMinutes()}` : `${Localtime.getMinutes()}`}:${Localtime.getSeconds() < 10 ? '0' + `${Localtime.getSeconds()}` : `${Localtime.getSeconds()}`} ` })
       this.list.push({ title: 'MEMORY USAGE', content: '' })
       this.list.push({ title: 'FIRMWARE VERSION', content: `${BoardInfo.release.distribution} ${BoardInfo.release.version}` })
     },
